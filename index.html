@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -14,88 +13,88 @@
 
 /* ══ CSS VARIABLES ══ */
 :root{
-–bg-page:#050505;
-–sidebar-bg:#111;
-–main-bg:#0d0d0d;
-–header-bg:#0a0a0a;
-–accent:#ff6b00;
-–accent2:#ff9500;
-–glow:rgba(255,107,0,.55);
-–glow-soft:rgba(255,107,0,.18);
-–ink:#f0ece4;
-–ink-mid:#b0a898;
-–ink-light:#706860;
-–rule:#222;
-–header-text:#f5f0e8;
-–sidebar-border:rgba(255,107,0,.25);
-–tag-bg:rgba(255,107,0,.08);
-–tag-border:rgba(255,107,0,.22);
-–card-bg:rgba(255,107,0,.04);
-–is-light:0;
+  --bg-page:#050505;
+  --sidebar-bg:#111;
+  --main-bg:#0d0d0d;
+  --header-bg:#0a0a0a;
+  --accent:#ff6b00;
+  --accent2:#ff9500;
+  --glow:rgba(255,107,0,.55);
+  --glow-soft:rgba(255,107,0,.18);
+  --ink:#f0ece4;
+  --ink-mid:#b0a898;
+  --ink-light:#706860;
+  --rule:#222;
+  --header-text:#f5f0e8;
+  --sidebar-border:rgba(255,107,0,.25);
+  --tag-bg:rgba(255,107,0,.08);
+  --tag-border:rgba(255,107,0,.22);
+  --card-bg:rgba(255,107,0,.04);
+  --is-light:0;
 }
 
 /* ══ THEME PRESETS ══ */
-.t-orange  {–accent:#ff6b00;–accent2:#ff9500;–glow:rgba(255,107,0,.55);–glow-soft:rgba(255,107,0,.18);–sidebar-border:rgba(255,107,0,.28);–tag-bg:rgba(255,107,0,.08);–tag-border:rgba(255,107,0,.22);–card-bg:rgba(255,107,0,.04);}
-.t-cyan    {–accent:#00e5ff;–accent2:#00b8d4;–glow:rgba(0,229,255,.5);–glow-soft:rgba(0,229,255,.15);–sidebar-border:rgba(0,229,255,.22);–tag-bg:rgba(0,229,255,.07);–tag-border:rgba(0,229,255,.2);–card-bg:rgba(0,229,255,.03);}
-.t-green   {–accent:#39ff14;–accent2:#00e676;–glow:rgba(57,255,20,.5);–glow-soft:rgba(57,255,20,.14);–sidebar-border:rgba(57,255,20,.22);–tag-bg:rgba(57,255,20,.07);–tag-border:rgba(57,255,20,.2);–card-bg:rgba(57,255,20,.03);}
-.t-magenta {–accent:#e040fb;–accent2:#ff4081;–glow:rgba(224,64,251,.5);–glow-soft:rgba(224,64,251,.15);–sidebar-border:rgba(224,64,251,.22);–tag-bg:rgba(224,64,251,.07);–tag-border:rgba(224,64,251,.2);–card-bg:rgba(224,64,251,.03);}
-.t-gold    {–accent:#ffd600;–accent2:#ffab00;–glow:rgba(255,214,0,.5);–glow-soft:rgba(255,214,0,.15);–sidebar-border:rgba(255,214,0,.22);–tag-bg:rgba(255,214,0,.07);–tag-border:rgba(255,214,0,.2);–card-bg:rgba(255,214,0,.03);}
-.t-red     {–accent:#ff1744;–accent2:#ff5252;–glow:rgba(255,23,68,.5);–glow-soft:rgba(255,23,68,.15);–sidebar-border:rgba(255,23,68,.22);–tag-bg:rgba(255,23,68,.07);–tag-border:rgba(255,23,68,.2);–card-bg:rgba(255,23,68,.03);}
-.t-violet  {–accent:#7c4dff;–accent2:#b388ff;–glow:rgba(124,77,255,.5);–glow-soft:rgba(124,77,255,.15);–sidebar-border:rgba(124,77,255,.22);–tag-bg:rgba(124,77,255,.07);–tag-border:rgba(124,77,255,.2);–card-bg:rgba(124,77,255,.03);}
+.t-orange  {--accent:#ff6b00;--accent2:#ff9500;--glow:rgba(255,107,0,.55);--glow-soft:rgba(255,107,0,.18);--sidebar-border:rgba(255,107,0,.28);--tag-bg:rgba(255,107,0,.08);--tag-border:rgba(255,107,0,.22);--card-bg:rgba(255,107,0,.04);}
+.t-cyan    {--accent:#00e5ff;--accent2:#00b8d4;--glow:rgba(0,229,255,.5);--glow-soft:rgba(0,229,255,.15);--sidebar-border:rgba(0,229,255,.22);--tag-bg:rgba(0,229,255,.07);--tag-border:rgba(0,229,255,.2);--card-bg:rgba(0,229,255,.03);}
+.t-green   {--accent:#39ff14;--accent2:#00e676;--glow:rgba(57,255,20,.5);--glow-soft:rgba(57,255,20,.14);--sidebar-border:rgba(57,255,20,.22);--tag-bg:rgba(57,255,20,.07);--tag-border:rgba(57,255,20,.2);--card-bg:rgba(57,255,20,.03);}
+.t-magenta {--accent:#e040fb;--accent2:#ff4081;--glow:rgba(224,64,251,.5);--glow-soft:rgba(224,64,251,.15);--sidebar-border:rgba(224,64,251,.22);--tag-bg:rgba(224,64,251,.07);--tag-border:rgba(224,64,251,.2);--card-bg:rgba(224,64,251,.03);}
+.t-gold    {--accent:#ffd600;--accent2:#ffab00;--glow:rgba(255,214,0,.5);--glow-soft:rgba(255,214,0,.15);--sidebar-border:rgba(255,214,0,.22);--tag-bg:rgba(255,214,0,.07);--tag-border:rgba(255,214,0,.2);--card-bg:rgba(255,214,0,.03);}
+.t-red     {--accent:#ff1744;--accent2:#ff5252;--glow:rgba(255,23,68,.5);--glow-soft:rgba(255,23,68,.15);--sidebar-border:rgba(255,23,68,.22);--tag-bg:rgba(255,23,68,.07);--tag-border:rgba(255,23,68,.2);--card-bg:rgba(255,23,68,.03);}
+.t-violet  {--accent:#7c4dff;--accent2:#b388ff;--glow:rgba(124,77,255,.5);--glow-soft:rgba(124,77,255,.15);--sidebar-border:rgba(124,77,255,.22);--tag-bg:rgba(124,77,255,.07);--tag-border:rgba(124,77,255,.2);--card-bg:rgba(124,77,255,.03);}
 
 /* LIGHT MINIMAL */
 .t-light{
-–bg-page:#f0f0f0;
-–sidebar-bg:#e8e8e8;
-–main-bg:#fafafa;
-–header-bg:#1a1a2e;
-–accent:#1565c0;
-–accent2:#1976d2;
-–glow:rgba(21,101,192,.3);
-–glow-soft:rgba(21,101,192,.10);
-–ink:#1a1a1a;
-–ink-mid:#444;
-–ink-light:#888;
-–rule:#ddd;
-–header-text:#e8f0fe;
-–sidebar-border:rgba(21,101,192,.22);
-–tag-bg:rgba(21,101,192,.08);
-–tag-border:rgba(21,101,192,.2);
-–card-bg:rgba(21,101,192,.04);
-–is-light:1;
+  --bg-page:#f0f0f0;
+  --sidebar-bg:#e8e8e8;
+  --main-bg:#fafafa;
+  --header-bg:#1a1a2e;
+  --accent:#1565c0;
+  --accent2:#1976d2;
+  --glow:rgba(21,101,192,.3);
+  --glow-soft:rgba(21,101,192,.10);
+  --ink:#1a1a1a;
+  --ink-mid:#444;
+  --ink-light:#888;
+  --rule:#ddd;
+  --header-text:#e8f0fe;
+  --sidebar-border:rgba(21,101,192,.22);
+  --tag-bg:rgba(21,101,192,.08);
+  --tag-border:rgba(21,101,192,.2);
+  --card-bg:rgba(21,101,192,.04);
+  --is-light:1;
 }
 /* LIGHT WARM */
 .t-warm{
-–bg-page:#fdf6ec;
-–sidebar-bg:#f5ede0;
-–main-bg:#fffdf9;
-–header-bg:#2d1b0e;
-–accent:#c0522a;
-–accent2:#e07040;
-–glow:rgba(192,82,42,.3);
-–glow-soft:rgba(192,82,42,.12);
-–ink:#2a1a0e;
-–ink-mid:#6b4530;
-–ink-light:#a07858;
-–rule:#e8d8c8;
-–header-text:#f5e8d8;
-–sidebar-border:rgba(192,82,42,.22);
-–tag-bg:rgba(192,82,42,.07);
-–tag-border:rgba(192,82,42,.2);
-–card-bg:rgba(192,82,42,.04);
-–is-light:1;
+  --bg-page:#fdf6ec;
+  --sidebar-bg:#f5ede0;
+  --main-bg:#fffdf9;
+  --header-bg:#2d1b0e;
+  --accent:#c0522a;
+  --accent2:#e07040;
+  --glow:rgba(192,82,42,.3);
+  --glow-soft:rgba(192,82,42,.12);
+  --ink:#2a1a0e;
+  --ink-mid:#6b4530;
+  --ink-light:#a07858;
+  --rule:#e8d8c8;
+  --header-text:#f5e8d8;
+  --sidebar-border:rgba(192,82,42,.22);
+  --tag-bg:rgba(192,82,42,.07);
+  --tag-border:rgba(192,82,42,.2);
+  --card-bg:rgba(192,82,42,.04);
+  --is-light:1;
 }
 
 html{font-size:15px;}
 body{
-font-family:“Exo 2”,sans-serif;
-background:var(–bg-page);
-color:var(–ink);
-min-height:100vh;
-display:flex;flex-direction:column;align-items:center;
-padding:0 20px 80px;
-overflow-x:hidden;
-transition:background .4s,color .4s;
+  font-family:"Exo 2",sans-serif;
+  background:var(--bg-page);
+  color:var(--ink);
+  min-height:100vh;
+  display:flex;flex-direction:column;align-items:center;
+  padding:0 20px 80px;
+  overflow-x:hidden;
+  transition:background .4s,color .4s;
 }
 
 /* ══ PARTICLE ══ */
@@ -104,18 +103,18 @@ transition:background .4s,color .4s;
 
 /* ══ TOOLBAR ══ */
 .toolbar{
-width:980px;max-width:100%;
-display:flex;align-items:center;flex-wrap:wrap;gap:8px;
-padding:16px 0 12px;
-position:relative;z-index:10;
+  width:980px;max-width:100%;
+  display:flex;align-items:center;flex-wrap:wrap;gap:8px;
+  padding:16px 0 12px;
+  position:relative;z-index:10;
 }
-.tb-label{font-family:“Share Tech Mono”,monospace;font-size:.65rem;letter-spacing:.14em;color:var(–ink-light);text-transform:uppercase;white-space:nowrap;}
+.tb-label{font-family:"Share Tech Mono",monospace;font-size:.65rem;letter-spacing:.14em;color:var(--ink-light);text-transform:uppercase;white-space:nowrap;}
 .swatch-row{display:flex;gap:5px;align-items:center;flex-wrap:wrap;}
 .swatch{
-width:20px;height:20px;border-radius:50%;cursor:pointer;
-border:2px solid transparent;
-transition:transform .15s,border-color .15s,box-shadow .15s;
-position:relative;
+  width:20px;height:20px;border-radius:50%;cursor:pointer;
+  border:2px solid transparent;
+  transition:transform .15s,border-color .15s,box-shadow .15s;
+  position:relative;
 }
 .swatch:hover{transform:scale(1.25);}
 .swatch.active{border-color:#fff;transform:scale(1.2);box-shadow:0 0 8px rgba(255,255,255,.6);}
@@ -132,201 +131,158 @@ position:relative;
 #customColor{width:26px;height:26px;padding:0;border:none;border-radius:50%;cursor:pointer;background:none;outline:2px solid rgba(255,255,255,.2);}
 .tb-div{width:1px;height:22px;background:rgba(255,255,255,.12);margin:0 2px;flex-shrink:0;}
 .tb-btn{
-font-family:“Share Tech Mono”,monospace;font-size:.68rem;letter-spacing:.1em;
-color:var(–accent);background:transparent;border:1px solid var(–accent);
-padding:5px 12px;cursor:pointer;border-radius:2px;text-transform:uppercase;
-transition:background .2s,color .2s,box-shadow .2s;
-box-shadow:0 0 5px var(–glow-soft);white-space:nowrap;
+  font-family:"Share Tech Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  color:var(--accent);background:transparent;border:1px solid var(--accent);
+  padding:5px 12px;cursor:pointer;border-radius:2px;text-transform:uppercase;
+  transition:background .2s,color .2s,box-shadow .2s;
+  box-shadow:0 0 5px var(--glow-soft);white-space:nowrap;
 }
-.tb-btn:hover{background:var(–accent);color:#000;box-shadow:0 0 12px var(–glow);}
+.tb-btn:hover{background:var(--accent);color:#000;box-shadow:0 0 12px var(--glow);}
 .tb-btn:disabled{opacity:.5;cursor:not-allowed;}
 
 /* ══ PAGE ══ */
 .page{
-width:980px;max-width:100%;
-background:var(–main-bg);
-border:1px solid var(–sidebar-border);
-box-shadow:0 0 40px var(–glow-soft),0 0 2px var(–accent);
-display:grid;
-grid-template-columns:285px 1fr;
-grid-template-rows:auto 1fr;
-border-radius:3px;overflow:hidden;
-position:relative;z-index:1;
-animation:pageRise .7s cubic-bezier(.22,.68,0,1.1) both;
-transition:box-shadow .4s,border-color .4s,background .4s;
+  width:980px;max-width:100%;
+  background:var(--main-bg);
+  border:1px solid var(--sidebar-border);
+  box-shadow:0 0 40px var(--glow-soft),0 0 2px var(--accent);
+  display:grid;
+  grid-template-columns:285px 1fr;
+  grid-template-rows:auto 1fr;
+  border-radius:3px;overflow:hidden;
+  position:relative;z-index:1;
+  animation:pageRise .7s cubic-bezier(.22,.68,0,1.1) both;
+  transition:box-shadow .4s,border-color .4s,background .4s;
 }
 @keyframes pageRise{from{opacity:0;transform:translateY(32px) scale(.98);}to{opacity:1;transform:none;}}
 
 /* ══ HEADER ══ */
 .header{
-grid-column:1/-1;
-background:var(–header-bg);
-padding:44px 48px 40px;
-display:flex;align-items:flex-end;gap:32px;
-position:relative;overflow:hidden;
-border-bottom:1px solid var(–sidebar-border);
-transition:border-color .4s;
+  grid-column:1/-1;
+  background:var(--header-bg);
+  padding:44px 48px 40px;
+  display:flex;align-items:flex-end;gap:32px;
+  position:relative;overflow:hidden;
+  border-bottom:1px solid var(--sidebar-border);
+  transition:border-color .4s;
 }
 .header::before{
-content:””;position:absolute;inset:0;
-background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(255,255,255,.012) 3px,rgba(255,255,255,.012) 4px);
-pointer-events:none;
+  content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(255,255,255,.012) 3px,rgba(255,255,255,.012) 4px);
+  pointer-events:none;
 }
 .header::after{
-content:””;position:absolute;bottom:0;left:0;right:0;height:2px;
-background:linear-gradient(90deg,transparent,var(–accent),var(–accent2),transparent);
-box-shadow:0 0 12px var(–glow);transition:box-shadow .4s;
+  content:"";position:absolute;bottom:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--accent),var(--accent2),transparent);
+  box-shadow:0 0 12px var(--glow);transition:box-shadow .4s;
 }
 .corner{position:absolute;width:26px;height:26px;}
-.corner-tl{top:12px;left:12px;border-top:2px solid var(–accent);border-left:2px solid var(–accent);}
-.corner-tr{top:12px;right:12px;border-top:2px solid var(–accent);border-right:2px solid var(–accent);}
-.corner-bl{bottom:12px;left:12px;border-bottom:2px solid var(–accent);border-left:2px solid var(–accent);}
-.corner-br{bottom:12px;right:12px;border-bottom:2px solid var(–accent);border-right:2px solid var(–accent);}
+.corner-tl{top:12px;left:12px;border-top:2px solid var(--accent);border-left:2px solid var(--accent);}
+.corner-tr{top:12px;right:12px;border-top:2px solid var(--accent);border-right:2px solid var(--accent);}
+.corner-bl{bottom:12px;left:12px;border-bottom:2px solid var(--accent);border-left:2px solid var(--accent);}
+.corner-br{bottom:12px;right:12px;border-bottom:2px solid var(--accent);border-right:2px solid var(--accent);}
 .avatar-wrap{
-flex-shrink:0;width:108px;height:108px;
-border-radius:50%;overflow:hidden;
-border:2px solid var(–accent);
-box-shadow:0 0 0 6px var(–glow-soft),0 0 20px var(–glow),0 4px 24px rgba(0,0,0,.6);
-position:relative;z-index:1;
-animation:avatarPop .9s cubic-bezier(.34,1.56,.64,1) .3s both;
-transition:border-color .4s,box-shadow .4s;
+  flex-shrink:0;width:108px;height:108px;
+  border-radius:50%;overflow:hidden;
+  border:2px solid var(--accent);
+  box-shadow:0 0 0 6px var(--glow-soft),0 0 20px var(--glow),0 4px 24px rgba(0,0,0,.6);
+  position:relative;z-index:1;
+  animation:avatarPop .9s cubic-bezier(.34,1.56,.64,1) .3s both;
+  transition:border-color .4s,box-shadow .4s;
 }
 @keyframes avatarPop{from{opacity:0;transform:scale(.5) rotate(-8deg);}to{opacity:1;transform:none;}}
 .avatar-wrap img{width:100%;height:100%;object-fit:cover;object-position:center top;}
 .avatar-wrap .av-bg{width:100%;height:100%;background-size:cover;background-position:center top;background-repeat:no-repeat;}
 .header-text{flex:1;position:relative;z-index:1;}
 .name{
-font-family:“Rajdhani”,sans-serif;
-font-size:3.4rem;font-weight:700;
-color:var(–header-text);letter-spacing:.08em;line-height:1;
-margin-bottom:12px;min-height:4rem;
-text-shadow:0 0 30px var(–glow-soft);
+  font-family:"Rajdhani",sans-serif;
+  font-size:3.4rem;font-weight:700;
+  color:var(--header-text);letter-spacing:.08em;line-height:1;
+  margin-bottom:12px;min-height:4rem;
+  text-shadow:0 0 30px var(--glow-soft);
 }
-.name em{font-style:normal;color:var(–accent);text-shadow:0 0 18px var(–glow),0 0 40px var(–glow);transition:color .4s,text-shadow .4s;}
-.cursor{display:inline-block;width:3px;height:.8em;background:var(–accent);margin-left:4px;vertical-align:middle;box-shadow:0 0 8px var(–glow);animation:blink .85s step-end infinite;transition:background .4s,box-shadow .4s;}
+.name em{font-style:normal;color:var(--accent);text-shadow:0 0 18px var(--glow),0 0 40px var(--glow);transition:color .4s,text-shadow .4s;}
+.cursor{display:inline-block;width:3px;height:.8em;background:var(--accent);margin-left:4px;vertical-align:middle;box-shadow:0 0 8px var(--glow);animation:blink .85s step-end infinite;transition:background .4s,box-shadow .4s;}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-.summary{font-size:.82rem;font-weight:300;color:var(–ink-mid);line-height:1.72;max-width:520px;opacity:0;animation:fadeUp .6s ease 2.5s both;border-left:2px solid var(–accent);padding-left:12px;transition:border-color .4s;}
+.summary{font-size:.82rem;font-weight:300;color:var(--ink-mid);line-height:1.72;max-width:520px;opacity:0;animation:fadeUp .6s ease 2.5s both;border-left:2px solid var(--accent);padding-left:12px;transition:border-color .4s;}
 @keyframes fadeUp{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:none;}}
 
 /* ══ SIDEBAR ══ */
-.sidebar{background:var(–sidebar-bg);padding:34px 24px;border-right:1px solid var(–sidebar-border);transition:background .4s,border-color .4s;}
+.sidebar{background:var(--sidebar-bg);padding:34px 24px;border-right:1px solid var(--sidebar-border);transition:background .4s,border-color .4s;}
 .s-section{margin-bottom:26px;}
-.s-heading{font-family:“Share Tech Mono”,monospace;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(–accent);margin-bottom:12px;padding-bottom:6px;border-bottom:1px solid var(–sidebar-border);text-shadow:0 0 8px var(–glow);transition:color .4s,border-color .4s,text-shadow .4s;}
-.c-item{display:flex;align-items:flex-start;gap:8px;margin-bottom:9px;font-size:.76rem;color:var(–ink-mid);line-height:1.45;}
-.c-icon{width:14px;height:14px;flex-shrink:0;margin-top:2px;color:var(–accent);transition:color .4s;}
+.s-heading{font-family:"Share Tech Mono",monospace;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;padding-bottom:6px;border-bottom:1px solid var(--sidebar-border);text-shadow:0 0 8px var(--glow);transition:color .4s,border-color .4s,text-shadow .4s;}
+.c-item{display:flex;align-items:flex-start;gap:8px;margin-bottom:9px;font-size:.76rem;color:var(--ink-mid);line-height:1.45;}
+.c-icon{width:14px;height:14px;flex-shrink:0;margin-top:2px;color:var(--accent);transition:color .4s;}
 .edu{margin-bottom:14px;}
-.edu-yr{font-family:“Share Tech Mono”,monospace;font-size:.6rem;color:var(–accent);letter-spacing:.08em;margin-bottom:2px;transition:color .4s;}
-.edu-deg{font-size:.74rem;font-weight:600;color:var(–ink);line-height:1.35;margin-bottom:2px;}
-.edu-sch{font-size:.68rem;color:var(–ink-mid);line-height:1.35;margin-bottom:2px;}
-.edu-gpa{font-family:“Share Tech Mono”,monospace;font-size:.60rem;color:var(–accent);font-weight:500;transition:color .4s;}
+.edu-yr{font-family:"Share Tech Mono",monospace;font-size:.6rem;color:var(--accent);letter-spacing:.08em;margin-bottom:2px;transition:color .4s;}
+.edu-deg{font-size:.74rem;font-weight:600;color:var(--ink);line-height:1.35;margin-bottom:2px;}
+.edu-sch{font-size:.68rem;color:var(--ink-mid);line-height:1.35;margin-bottom:2px;}
+.edu-gpa{font-family:"Share Tech Mono",monospace;font-size:.60rem;color:var(--accent);font-weight:500;transition:color .4s;}
 .sk-group{margin-bottom:10px;}
-.sk-label{font-family:“Share Tech Mono”,monospace;font-size:.62rem;color:var(–accent);letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px;transition:color .4s;}
+.sk-label{font-family:"Share Tech Mono",monospace;font-size:.62rem;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px;transition:color .4s;}
 .sk-tags{display:flex;flex-wrap:wrap;gap:4px;}
-.tag{font-family:“Share Tech Mono”,monospace;font-size:.61rem;color:var(–accent);background:var(–tag-bg);border:1px solid var(–tag-border);padding:3px 8px;border-radius:2px;opacity:0;transform:translateY(6px);transition:background .2s,color .2s,box-shadow .2s,border-color .4s;cursor:default;}
+.tag{font-family:"Share Tech Mono",monospace;font-size:.61rem;color:var(--accent);background:var(--tag-bg);border:1px solid var(--tag-border);padding:3px 8px;border-radius:2px;opacity:0;transform:translateY(6px);transition:background .2s,color .2s,box-shadow .2s,border-color .4s;cursor:default;}
 .tag.in{opacity:1;transform:translateY(0);transition:opacity .35s ease,transform .35s ease,background .2s,color .2s,box-shadow .2s;}
-.tag:hover{background:var(–accent);color:#000;box-shadow:0 0 9px var(–glow);}
+.tag:hover{background:var(--accent);color:#000;box-shadow:0 0 9px var(--glow);}
 
 /* ══ REVEAL ══ */
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease;}
 .reveal.visible{opacity:1;transform:none;}
 
 /* ══ MAIN ══ */
-.main{padding:34px 40px;background:var(–main-bg);transition:background .4s;}
+.main{padding:34px 40px;background:var(--main-bg);transition:background .4s;}
 .section{margin-bottom:32px;}
 .section:last-child{margin-bottom:0;}
-.sec-head{font-family:“Rajdhani”,sans-serif;font-size:1.05rem;font-weight:700;color:var(–accent);letter-spacing:.18em;text-transform:uppercase;margin-bottom:18px;display:flex;align-items:center;gap:10px;text-shadow:0 0 10px var(–glow);transition:color .4s,text-shadow .4s;}
-.sec-head::after{content:””;flex:1;height:1px;background:var(–sidebar-border);}
-.sec-head .n{font-family:“Share Tech Mono”,monospace;font-size:.58rem;color:var(–ink-light);letter-spacing:.1em;}
+.sec-head{font-family:"Rajdhani",sans-serif;font-size:1.05rem;font-weight:700;color:var(--accent);letter-spacing:.18em;text-transform:uppercase;margin-bottom:18px;display:flex;align-items:center;gap:10px;text-shadow:0 0 10px var(--glow);transition:color .4s,text-shadow .4s;}
+.sec-head::after{content:"";flex:1;height:1px;background:var(--sidebar-border);}
+.sec-head .n{font-family:"Share Tech Mono",monospace;font-size:.58rem;color:var(--ink-light);letter-spacing:.1em;}
 
 /* ══ TIMELINE ══ */
 .timeline{position:relative;padding-left:26px;}
-.timeline::before{content:””;position:absolute;left:6px;top:8px;bottom:0;width:1px;background:linear-gradient(to bottom,var(–accent),transparent);transform-origin:top;transform:scaleY(0);transition:transform 1.4s cubic-bezier(.4,0,.2,1) .2s;box-shadow:0 0 6px var(–glow);}
+.timeline::before{content:"";position:absolute;left:6px;top:8px;bottom:0;width:1px;background:linear-gradient(to bottom,var(--accent),transparent);transform-origin:top;transform:scaleY(0);transition:transform 1.4s cubic-bezier(.4,0,.2,1) .2s;box-shadow:0 0 6px var(--glow);}
 .timeline.tl-visible::before{transform:scaleY(1);}
 .exp{position:relative;margin-bottom:24px;opacity:0;transform:translateX(-14px);transition:opacity .5s ease,transform .5s ease;}
 .exp.visible{opacity:1;transform:none;}
-.exp::before{content:””;position:absolute;left:-21px;top:6px;width:10px;height:10px;border-radius:50%;background:#000;border:2px solid var(–accent);box-shadow:0 0 8px var(–glow);transition:background .2s,box-shadow .2s,border-color .4s;z-index:1;}
-.exp:hover::before{background:var(–accent);box-shadow:0 0 14px var(–glow);}
+.exp::before{content:"";position:absolute;left:-21px;top:6px;width:10px;height:10px;border-radius:50%;background:#000;border:2px solid var(--accent);box-shadow:0 0 8px var(--glow);transition:background .2s,box-shadow .2s,border-color .4s;z-index:1;}
+.exp:hover::before{background:var(--accent);box-shadow:0 0 14px var(--glow);}
 .exp-meta{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px;margin-bottom:1px;}
-.exp-role{font-family:“Rajdhani”,sans-serif;font-size:.93rem;font-weight:700;color:var(–ink);letter-spacing:.04em;}
-.exp-period{font-family:“Share Tech Mono”,monospace;font-size:.62rem;color:var(–accent);letter-spacing:.07em;white-space:nowrap;transition:color .4s;}
-.exp-company{font-size:.72rem;color:var(–ink-mid);font-style:italic;margin-bottom:8px;}
+.exp-role{font-family:"Rajdhani",sans-serif;font-size:.93rem;font-weight:700;color:var(--ink);letter-spacing:.04em;}
+.exp-period{font-family:"Share Tech Mono",monospace;font-size:.62rem;color:var(--accent);letter-spacing:.07em;white-space:nowrap;transition:color .4s;}
+.exp-company{font-size:.72rem;color:var(--ink-mid);font-style:italic;margin-bottom:8px;}
 .exp-bullets{list-style:none;}
-.exp-bullets li{font-size:.77rem;color:var(–ink-mid);line-height:1.68;margin-bottom:4px;padding-left:14px;position:relative;font-weight:300;}
-.exp-bullets li::before{content:”›”;position:absolute;left:0;color:var(–accent);font-size:.9rem;line-height:1.4;transition:color .4s;}
+.exp-bullets li{font-size:.77rem;color:var(--ink-mid);line-height:1.68;margin-bottom:4px;padding-left:14px;position:relative;font-weight:300;}
+.exp-bullets li::before{content:"›";position:absolute;left:0;color:var(--accent);font-size:.9rem;line-height:1.4;transition:color .4s;}
 
-/* ══ EXPAND (Mitsubishi detail) ══ */
-.expand-btn{
-display:inline-flex;align-items:center;gap:6px;
-font-family:“Share Tech Mono”,monospace;font-size:.62rem;
-letter-spacing:.1em;text-transform:uppercase;
-color:var(–accent);background:var(–tag-bg);
-border:1px solid var(–tag-border);padding:4px 12px;
-border-radius:2px;cursor:pointer;margin-top:6px;
-transition:background .2s,box-shadow .2s;
-box-shadow:0 0 4px var(–glow-soft);
-}
-.expand-btn:hover{background:var(–accent);color:#000;box-shadow:0 0 10px var(–glow);}
-.expand-btn .arrow{transition:transform .3s;}
-.expand-btn.open .arrow{transform:rotate(180deg);}
 
-.detail-panel{
-max-height:0;overflow:hidden;
-transition:max-height .5s cubic-bezier(.4,0,.2,1),opacity .4s;
-opacity:0;
-}
-.detail-panel.open{max-height:600px;opacity:1;}
-
-.detail-card{
-margin-top:12px;
-background:var(–card-bg);
-border:1px solid var(–sidebar-border);
-border-radius:2px;padding:14px 16px;
-transition:background .4s,border-color .4s;
-}
-.detail-card-title{
-font-family:“Share Tech Mono”,monospace;font-size:.63rem;
-letter-spacing:.14em;text-transform:uppercase;
-color:var(–accent);margin-bottom:10px;
-text-shadow:0 0 8px var(–glow);
-}
-.detail-steps{list-style:none;}
-.detail-steps li{
-font-size:.76rem;color:var(–ink-mid);line-height:1.65;
-padding-left:14px;position:relative;margin-bottom:5px;font-weight:300;
-}
-.detail-steps li::before{content:“▸”;position:absolute;left:0;color:var(–accent);font-size:.7rem;line-height:1.6;transition:color .4s;}
 
 /* ══ ACTIVITIES ══ */
-.act-item{font-size:.79rem;color:var(–ink-mid);display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;}
-.act-dot{width:6px;height:6px;border-radius:50%;background:var(–accent);box-shadow:0 0 6px var(–glow);flex-shrink:0;margin-top:5px;transition:background .4s,box-shadow .4s;}
+.act-item{font-size:.79rem;color:var(--ink-mid);display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;}
+.act-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 6px var(--glow);flex-shrink:0;margin-top:5px;transition:background .4s,box-shadow .4s;}
 .act-body{}
-.act-title{font-family:“Rajdhani”,sans-serif;font-size:.85rem;font-weight:700;color:var(–ink);letter-spacing:.04em;margin-bottom:3px;}
+.act-title{font-family:"Rajdhani",sans-serif;font-size:.85rem;font-weight:700;color:var(--ink);letter-spacing:.04em;margin-bottom:3px;}
 .act-bullets{list-style:none;margin-top:4px;}
-.act-bullets li{font-size:.75rem;color:var(–ink-mid);line-height:1.65;padding-left:12px;position:relative;margin-bottom:3px;}
-.act-bullets li::before{content:”–”;position:absolute;left:0;color:var(–accent);transition:color .4s;}
+.act-bullets li{font-size:.75rem;color:var(--ink-mid);line-height:1.65;padding-left:12px;position:relative;margin-bottom:3px;}
+.act-bullets li::before{content:"–";position:absolute;left:0;color:var(--accent);transition:color .4s;}
 
 @media print{
-body{background:#000!important;padding:0;}
-.toolbar{display:none!important;}
-#pcv{display:none!important;}
-.reveal,.exp,.tag{opacity:1!important;transform:none!important;}
-.page{box-shadow:none;border-radius:0;width:100%;animation:none;}
-.detail-panel{max-height:none!important;opacity:1!important;}
+  body{background:#000!important;padding:0;}
+  .toolbar{display:none!important;}
+  #pcv{display:none!important;}
+  .reveal,.exp,.tag{opacity:1!important;transform:none!important;}
+  .page{box-shadow:none;border-radius:0;width:100%;animation:none;}
 }
 @media(max-width:700px){
-.page{grid-template-columns:1fr;}
-.header{flex-direction:column;align-items:flex-start;}
-.name{font-size:2.4rem;}
+  .page{grid-template-columns:1fr;}
+  .header{flex-direction:column;align-items:flex-start;}
+  .name{font-size:2.4rem;}
 }
 </style>
-
 </head>
 <body class="t-orange">
 
 <canvas id="pcv"></canvas>
 
 <!-- ══ TOOLBAR ══ -->
-
 <div class="toolbar">
   <span class="tb-label">Theme</span>
   <div class="swatch-row">
@@ -353,7 +309,6 @@ body{background:#000!important;padding:0;}
 </div>
 
 <!-- ══ PAGE ══ -->
-
 <div class="page" id="resume-page">
   <header class="header">
     <div class="corner corner-tl"></div><div class="corner corner-tr"></div>
@@ -363,12 +318,11 @@ body{background:#000!important;padding:0;}
     </div>
     <div class="header-text">
       <h1 class="name"><span id="tw"></span><span class="cursor" id="cur"></span></h1>
-      <p class="summary" id="sum">Electronics engineer with 5+ years of experience in test automation, embedded systems, and manufacturing data analytics. Skilled in developing production monitoring systems using Python, SQL Server, Power BI, and Node-RED in automotive electronics environments.</p>
+      <p class="summary" id="sum">Electronics engineer with 5+ years of experience in automotive product analysis, test automation, embedded systems, and manufacturing data analytics. Specialized in failure analysis and quality improvement for automotive electronics in high-volume production environments.</p>
     </div>
   </header>
 
   <!-- SIDEBAR -->
-
   <aside class="sidebar">
     <div class="s-section reveal">
       <div class="s-heading" data-en="Contact" data-th="ติดต่อ">Contact</div>
@@ -377,125 +331,100 @@ body{background:#000!important;padding:0;}
       <div class="c-item"><svg class="c-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg><span data-en="Bowin, Sriracha, Chonburi" data-th="โบว์วิน, ศรีราชา, ชลบุรี">Bowin, Sriracha, Chonburi</span></div>
     </div>
 
-```
-<div class="s-section reveal">
-  <div class="s-heading" data-en="Education" data-th="การศึกษา">Education</div>
-  <div class="edu"><div class="edu-yr">2016 — 2019</div><div class="edu-deg" data-en="B.Eng. Electronics &amp; Telecommunications" data-th="วศ.บ. อิเล็กทรอนิกส์และโทรคมนาคม">B.Eng. Electronics &amp; Telecommunications</div><div class="edu-sch" data-en="Rajamangala Univ. of Technology Isan, Khon Kaen" data-th="ม.เทคโนโลยีราชมงคลอีสาน วข.ขอนแก่น">Rajamangala Univ. of Technology Isan, Khon Kaen</div><div class="edu-gpa">GPA 3.07</div></div>
-  <div class="edu"><div class="edu-yr">2014 — 2016</div><div class="edu-deg" data-en="High Vocational Certificate — Electronics" data-th="ปวส. ช่างอิเล็กทรอนิกส์">High Vocational Certificate — Electronics</div><div class="edu-sch" data-en="Rajamangala Univ. of Technology Isan, Khon Kaen" data-th="ม.เทคโนโลยีราชมงคลอีสาน วข.ขอนแก่น">Rajamangala Univ. of Technology Isan, Khon Kaen</div><div class="edu-gpa">GPA 3.15</div></div>
-  <div class="edu"><div class="edu-yr">2011 — 2013</div><div class="edu-deg" data-en="Vocational Certificate — Electronics" data-th="ปวช. ช่างอิเล็กทรอนิกส์">Vocational Certificate — Electronics</div><div class="edu-sch" data-en="Khon Kaen Technical College" data-th="วิทยาลัยเทคนิคขอนแก่น">Khon Kaen Technical College</div><div class="edu-gpa">GPA 3.60</div></div>
-</div>
+    <div class="s-section reveal">
+      <div class="s-heading" data-en="Education" data-th="การศึกษา">Education</div>
+      <div class="edu"><div class="edu-yr">2016 — 2019</div><div class="edu-deg" data-en="B.Eng. Electronics &amp; Telecommunications" data-th="วศ.บ. อิเล็กทรอนิกส์และโทรคมนาคม">B.Eng. Electronics &amp; Telecommunications</div><div class="edu-sch" data-en="Rajamangala Univ. of Technology Isan, Khon Kaen" data-th="ม.เทคโนโลยีราชมงคลอีสาน วข.ขอนแก่น">Rajamangala Univ. of Technology Isan, Khon Kaen</div><div class="edu-gpa">GPA 3.07</div></div>
+      <div class="edu"><div class="edu-yr">2014 — 2016</div><div class="edu-deg" data-en="High Vocational Certificate — Electronics" data-th="ปวส. ช่างอิเล็กทรอนิกส์">High Vocational Certificate — Electronics</div><div class="edu-sch" data-en="Rajamangala Univ. of Technology Isan, Khon Kaen" data-th="ม.เทคโนโลยีราชมงคลอีสาน วข.ขอนแก่น">Rajamangala Univ. of Technology Isan, Khon Kaen</div><div class="edu-gpa">GPA 3.15</div></div>
+      <div class="edu"><div class="edu-yr">2011 — 2013</div><div class="edu-deg" data-en="Vocational Certificate — Electronics" data-th="ปวช. ช่างอิเล็กทรอนิกส์">Vocational Certificate — Electronics</div><div class="edu-sch" data-en="Khon Kaen Technical College" data-th="วิทยาลัยเทคนิคขอนแก่น">Khon Kaen Technical College</div><div class="edu-gpa">GPA 3.60</div></div>
+    </div>
 
-<div class="s-section reveal">
-  <div class="s-heading" data-en="Technical Skills" data-th="ทักษะ">Technical Skills</div>
-  <div class="sk-group"><div class="sk-label" data-en="Electronics" data-th="อิเล็กทรอนิกส์">Electronics</div><div class="sk-tags"><span class="tag">Circuit Design</span><span class="tag">PCB Layout</span><span class="tag">Altium Designer</span><span class="tag">Embedded Firmware</span><span class="tag">MCU Systems</span><span class="tag">LED Drivers</span></div></div>
-  <div class="sk-group"><div class="sk-label" data-en="Programming" data-th="การเขียนโปรแกรม">Programming</div><div class="sk-tags"><span class="tag">Python</span><span class="tag">C/C++</span><span class="tag">Qt Designer</span><span class="tag">Node-RED</span><span class="tag">Power BI</span></div></div>
-  <div class="sk-group"><div class="sk-label" data-en="Interfaces" data-th="อินเทอร์เฟซ">Interfaces</div><div class="sk-tags"><span class="tag">RS232</span><span class="tag">RS485</span><span class="tag">Ethernet TCP/IP</span><span class="tag">Test Automation</span><span class="tag">Traceability</span></div></div>
-  <div class="sk-group"><div class="sk-label" data-en="Database &amp; Data" data-th="ฐานข้อมูล">Database &amp; Data</div><div class="sk-tags"><span class="tag">SQL Server</span><span class="tag">MySQL</span><span class="tag">SQLite</span><span class="tag">CSV Logging</span><span class="tag">Data Visualization</span></div></div>
-  <div class="sk-group"><div class="sk-label" data-en="Equipment" data-th="อุปกรณ์">Equipment</div><div class="sk-tags"><span class="tag">Oscilloscope</span><span class="tag">DMM</span><span class="tag">Power Supply</span><span class="tag">LCR Meter</span></div></div>
-</div>
-  <div class="s-section qr-section reveal" id="qr-sidebar-section">
-  <div class="s-heading" data-en="Portfolio / Link" data-th="พอร์ตโฟลิโอ">Portfolio / Link</div>
-  <div class="qr-box">
-    <div id="qr-display"></div>
-    <div class="qr-url-label" id="qr-url-display"></div>
-  </div>
-</div>
-```
-
+    <div class="s-section reveal">
+      <div class="s-heading" data-en="Technical Skills" data-th="ทักษะ">Technical Skills</div>
+      <div class="sk-group"><div class="sk-label" data-en="Electronics" data-th="อิเล็กทรอนิกส์">Electronics</div><div class="sk-tags"><span class="tag">Circuit Design</span><span class="tag">PCB Layout</span><span class="tag">Altium Designer</span><span class="tag">Embedded Firmware</span><span class="tag">MCU Systems</span><span class="tag">LED Drivers</span></div></div>
+      <div class="sk-group"><div class="sk-label" data-en="Programming" data-th="การเขียนโปรแกรม">Programming</div><div class="sk-tags"><span class="tag">Python</span><span class="tag">C/C++</span><span class="tag">Qt Designer</span><span class="tag">Node-RED</span><span class="tag">Power BI</span></div></div>
+      <div class="sk-group"><div class="sk-label" data-en="Interfaces" data-th="อินเทอร์เฟซ">Interfaces</div><div class="sk-tags"><span class="tag">RS232</span><span class="tag">RS485</span><span class="tag">Ethernet TCP/IP</span><span class="tag">Test Automation</span><span class="tag">Traceability</span></div></div>
+      <div class="sk-group"><div class="sk-label" data-en="Database &amp; Data" data-th="ฐานข้อมูล">Database &amp; Data</div><div class="sk-tags"><span class="tag">SQL Server</span><span class="tag">MySQL</span><span class="tag">SQLite</span><span class="tag">CSV Logging</span><span class="tag">Data Visualization</span></div></div>
+      <div class="sk-group"><div class="sk-label" data-en="Equipment" data-th="อุปกรณ์">Equipment</div><div class="sk-tags"><span class="tag">Oscilloscope</span><span class="tag">DMM</span><span class="tag">Power Supply</span><span class="tag">LCR Meter</span></div></div>
+    </div>
+      <div class="s-section qr-section reveal" id="qr-sidebar-section">
+      <div class="s-heading" data-en="Portfolio / Link" data-th="พอร์ตโฟลิโอ">Portfolio / Link</div>
+      <div class="qr-box">
+        <div id="qr-display"></div>
+        <div class="qr-url-label" id="qr-url-display"></div>
+      </div>
+    </div>
   </aside>
 
   <!-- MAIN -->
-
   <main class="main">
     <section class="section">
       <h2 class="sec-head reveal"><span class="n">01</span><span data-en="Experience" data-th="ประสบการณ์">Experience</span></h2>
       <div class="timeline" id="tl">
 
-```
-    <!-- MITSUBISHI -->
-    <div class="exp">
-      <div class="exp-meta">
-        <span class="exp-role" data-en="Repair &amp; Analysis Engineer" data-th="วิศวกรซ่อมและวิเคราะห์">Repair &amp; Analysis Engineer</span>
-        <span class="exp-period">Feb 2022 — Present</span>
-      </div>
-      <div class="exp-company">Mitsubishi Electric Thai Auto-Parts Co., Ltd.</div>
-      <ul class="exp-bullets">
-        <li data-en="Supported troubleshooting and repair of automotive LED driver modules with NG issues; performed circuit-level diagnostics and rework." data-th="สนับสนุนการแก้ปัญหาและซ่อมโมดูล LED Driver ยานยนต์ที่มีปัญหา NG ด้วยการวินิจฉัยและรีเวิร์กในระดับวงจร">Supported troubleshooting and repair of automotive LED driver modules with NG issues; performed circuit-level diagnostics and rework.</li>
-        <li data-en="Conducted claim analysis workflow: received defective units → component-level fault isolation → failure mode identification → root cause report." data-th="ดำเนินกระบวนการวิเคราะห์เคลม: รับชิ้นงานบกพร่อง → แยกจุดบกพร่องระดับชิ้นส่วน → ระบุ Failure Mode → จัดทำรายงานหาสาเหตุ">Conducted claim analysis workflow: received defective units → component-level fault isolation → failure mode identification → root cause report.</li>
-        <li data-en="Developed analysis recording system for high-volume test data using Python, Qt Designer, and SQL Server, enabling detailed traceability." data-th="พัฒนาระบบบันทึกการวิเคราะห์สำหรับข้อมูลการทดสอบปริมาณสูงด้วย Python, Qt Designer และ SQL Server">Developed analysis recording system for high-volume test data using Python, Qt Designer, and SQL Server.</li>
-        <li data-en="Created automated Power BI &amp; Node-RED dashboards for real-time production quality monitoring and management decision support." data-th="สร้างแดชบอร์ด Power BI และ Node-RED อัตโนมัติสำหรับตรวจสอบคุณภาพการผลิตแบบเรียลไทม์">Created automated Power BI &amp; Node-RED dashboards for real-time production quality monitoring.</li>
-      </ul>
-      <!-- EXPAND BUTTON -->
-      <button class="expand-btn" id="mit-btn" onclick="toggleDetail('mit-panel','mit-btn')">
-        <span data-en="Claim Analysis Detail" data-th="รายละเอียดการวิเคราะห์เคลม">Claim Analysis Detail</span>
-        <span class="arrow">▾</span>
-      </button>
-      <div class="detail-panel" id="mit-panel">
-        <div class="detail-card">
-          <div class="detail-card-title" data-en="LED Driver Claim Analysis Process" data-th="กระบวนการวิเคราะห์เคลม LED Driver">LED Driver Claim Analysis Process</div>
-          <ol class="detail-steps">
-            <li data-en="Receive defective LED driver unit from customer / production line with failure description and lot information." data-th="รับชิ้นงาน LED Driver บกพร่องจากลูกค้า/ไลน์ผลิต พร้อมรายละเอียดความเสียหายและข้อมูล Lot">Receive defective LED driver unit from customer / production line with failure description and lot information.</li>
-            <li data-en="Reproduce failure: functional test on test jig to confirm and document the exact fault symptom (e.g. open circuit, overcurrent, no output)." data-th="ทดสอบซ้ำเพื่อยืนยันความเสียหาย: ทดสอบบน Test Jig เพื่อยืนยันและบันทึกอาการที่แน่ชัด (เช่น วงจรขาด, กระแสเกิน, ไม่มี Output)">Reproduce failure: functional test on test jig to confirm and document the exact fault symptom.</li>
-            <li data-en="Circuit-level inspection: visual inspection (microscope), component measurement (DMM, LCR Meter, Oscilloscope) to isolate fault location." data-th="ตรวจสอบระดับวงจร: ตรวจพินิจ (กล้องจุลทรรศน์), วัดชิ้นส่วน (DMM, LCR Meter, Oscilloscope) เพื่อแยกจุดบกพร่อง">Circuit-level inspection: visual inspection (microscope), component measurement to isolate fault location.</li>
-            <li data-en="Failure mode classification: OPEN / SHORT / Degraded / ESD / Thermal damage — mapped to circuit schematic." data-th="จำแนก Failure Mode: OPEN / SHORT / เสื่อมสภาพ / ESD / ความร้อนเสียหาย — ระบุตำแหน่งในแผนผังวงจร">Failure mode classification: OPEN / SHORT / Degraded / ESD / Thermal — mapped to circuit schematic.</li>
-            <li data-en="Root cause analysis using 5-Why and fishbone diagram; correlated with production process data and traceability records." data-th="วิเคราะห์หาสาเหตุราก (5-Why, Fishbone Diagram); เชื่อมโยงกับข้อมูลกระบวนการผลิตและ Traceability">Root cause analysis using 5-Why and fishbone diagram; correlated with production and traceability records.</li>
-            <li data-en="Generate structured analysis report: failure summary, evidence photos, root cause, corrective action, and recurrence prevention." data-th="จัดทำรายงานวิเคราะห์: สรุปความเสียหาย, ภาพหลักฐาน, สาเหตุราก, การแก้ไข และการป้องกันการเกิดซ้ำ">Generate structured analysis report: failure summary, evidence photos, root cause, corrective action, and prevention.</li>
-          </ol>
+        <!-- MITSUBISHI -->
+        <div class="exp">
+          <div class="exp-meta">
+            <span class="exp-role" data-en="Repair &amp; Analysis Engineer" data-th="วิศวกรซ่อมและวิเคราะห์">Repair &amp; Analysis Engineer</span>
+            <span class="exp-period">Feb 2022 — Present</span>
+          </div>
+          <div class="exp-company">Mitsubishi Electric Thai Auto-Parts Co., Ltd.</div>
+          <ul class="exp-bullets">
+            <li data-en="Supported troubleshooting and repair of automotive electronics — LED Driver, BCM, TCU, FPC, and Car Multimedia — for NG issues across assembly and functional test processes (ICT, FTC, Optical, Uniformity, Final Inspection)." data-th="สนับสนุนการแก้ปัญหาและซ่อมแซม LED Driver, BCM, TCU, FPC และ Car Multimedia ที่เกิดข้อผิดพลาดในสายการผลิต ทั้งกระบวนการประกอบและทดสอบ (ICT, FTC, Optical, Uniformity, Final Inspection)">Supported troubleshooting and repair of automotive electronics — LED Driver, BCM, TCU, FPC, and Car Multimedia — for NG issues across assembly and functional test processes (ICT, FTC, Optical, Uniformity, Final Inspection).</li>
+            <li data-en="Performed root cause analysis using circuit-level diagnostics with tools including Digital Multimeter, Oscilloscope, LCR Meter, and Microscope; utilized communication interfaces (PCAN, I2C, UART) for signal tracing and functional verification; documented findings and reported anomalies to QC and related departments." data-th="วิเคราะห์หาสาเหตุด้วยเครื่องมือ เช่น Digital Multimeter, Oscilloscope, LCR Meter และกล้องจุลทรรศน์ รวมถึงใช้การสื่อสาร PCAN, I2C, UART ในการติดตามสัญญาณและตรวจสอบการทำงาน สรุปรายงานและแจ้งความผิดปกติไปยังแผนก QC และผู้ที่เกี่ยวข้อง">Performed root cause analysis using circuit-level diagnostics with tools including Digital Multimeter, Oscilloscope, LCR Meter, and Microscope; utilized communication interfaces (PCAN, I2C, UART) for signal tracing and functional verification; documented findings and reported anomalies to QC and related departments.</li>
+            <li data-en="Supported LED Driver claim analysis: reproduced failure on test jig → isolated fault to component level via schematic tracing and signal measurement → classified failure mode (OPEN / SHORT / ESD damage / Thermal stress / Degraded component) → identified root cause using 5-Why and correlation with production traceability data → generated structured report with evidence photos, corrective action, and recurrence prevention for QC and customer feedback." data-th="สนับสนุนการวิเคราะห์เคลม LED Driver: ทดสอบซ้ำบน Test Jig เพื่อยืนยันอาการ → แยกจุดบกพร่องระดับชิ้นส่วนด้วยการ Trace Schematic และวัดสัญญาณ → จำแนก Failure Mode (OPEN / SHORT / ESD / Thermal Stress / ชิ้นส่วนเสื่อมสภาพ) → วิเคราะห์หาสาเหตุรากด้วย 5-Why และเชื่อมโยงกับข้อมูล Traceability → จัดทำรายงานพร้อมภาพหลักฐาน การแก้ไข และการป้องกันการเกิดซ้ำสำหรับ QC และ Feedback ลูกค้า">Supported LED Driver claim analysis: reproduced failure on test jig → isolated fault to component level via schematic tracing and signal measurement → classified failure mode (OPEN / SHORT / ESD damage / Thermal stress / Degraded component) → identified root cause using 5-Why and correlation with production traceability data → generated structured report with evidence photos, corrective action, and recurrence prevention for QC and customer feedback.</li>
+
+          </ul>
+        </div>
+
+        <!-- ASIAN STANLEY -->
+        <div class="exp">
+          <div class="exp-meta">
+            <span class="exp-role" data-en="Engineer Support" data-th="วิศวกรสนับสนุน">Engineer Support</span>
+            <span class="exp-period">Mar 2021 — Jan 2022</span>
+          </div>
+          <div class="exp-company">Asian Stanley International Co., Ltd.</div>
+          <ul class="exp-bullets">
+            <li data-en="Developed automated electrical test machines using Python, integrated with instruments via RS232, RS485, and Ethernet TCP/IP." data-th="พัฒนาเครื่องทดสอบไฟฟ้าอัตโนมัติด้วย Python เชื่อมต่อเครื่องมือผ่าน RS232, RS485 และ Ethernet TCP/IP">Developed automated electrical test machines using Python, integrated with instruments via RS232, RS485, and Ethernet TCP/IP.</li>
+            <li data-en="Designed test sequences and control logic for LED drivers and automotive headlamp / tail-lamp modules." data-th="ออกแบบลำดับการทดสอบและลอจิกควบคุมสำหรับ LED Driver และโมดูลไฟหน้า/ไฟท้ายรถยนต์">Designed test sequences and control logic for LED drivers and automotive headlamp / tail-lamp modules.</li>
+            <li data-en="Implemented traceability and automatic log-data storage (CSV, SQLite) for production and quality analysis." data-th="ติดตั้งระบบ Traceability และจัดเก็บข้อมูล Log อัตโนมัติ (CSV, SQLite)">Implemented traceability and automatic log-data storage (CSV, SQLite) for production and quality analysis.</li>
+            <li data-en="Integrated hardware, sensors, test jigs, and instruments to ensure reliable and repeatable test results." data-th="ผสานฮาร์ดแวร์ เซ็นเซอร์ Test Jig และเครื่องมือวัดเพื่อผลการทดสอบที่ถูกต้องและทำซ้ำได้">Integrated hardware, sensors, test jigs, and instruments to ensure reliable and repeatable test results.</li>
+          </ul>
+        </div>
+
+        <!-- ISON -->
+        <div class="exp">
+          <div class="exp-meta">
+            <span class="exp-role" data-en="Research &amp; Development Engineer" data-th="วิศวกรวิจัยและพัฒนา">Research &amp; Development Engineer</span>
+            <span class="exp-period">Sep 2019 — Dec 2020</span>
+          </div>
+          <div class="exp-company">Ison Import-Export Co., Ltd.</div>
+          <ul class="exp-bullets">
+            <li data-en="Designed electronic circuits and PCB layout for emergency lighting with auto power-on and battery charging management." data-th="ออกแบบวงจรและ PCB สำหรับไฟฉุกเฉิน ระบบเปิดอัตโนมัติและจัดการชาร์จแบตเตอรี่">Designed electronic circuits and PCB layout for emergency lighting with auto power-on and battery charging management.</li>
+            <li data-en="Developed embedded firmware to control product functions, improve reliability, and meet safety standards." data-th="พัฒนา Embedded Firmware ควบคุมการทำงาน เพิ่มความน่าเชื่อถือ และผ่านมาตรฐานความปลอดภัย">Developed embedded firmware to control product functions, improve reliability, and meet safety standards.</li>
+            <li data-en="Created complete schematic, BOM, and PCB routing using Altium Designer." data-th="จัดทำ Schematic, BOM และ PCB Routing ครบชุดด้วย Altium Designer">Created complete schematic, BOM, and PCB routing using Altium Designer.</li>
+            <li data-en="Collaborated with production and QC teams to improve yield rate and reduce component failure." data-th="ประสานงานกับทีมผลิตและ QC เพื่อปรับปรุง Yield Rate และลดความเสียหายของชิ้นส่วน">Collaborated with production and QC teams to improve yield rate and reduce component failure.</li>
+          </ul>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- ASIAN STANLEY -->
-    <div class="exp">
-      <div class="exp-meta">
-        <span class="exp-role" data-en="Engineer Support" data-th="วิศวกรสนับสนุน">Engineer Support</span>
-        <span class="exp-period">Mar 2021 — Jan 2022</span>
+    <!-- ACTIVITIES -->
+    <section class="section">
+      <h2 class="sec-head reveal"><span class="n">02</span><span data-en="Activities &amp; Projects" data-th="กิจกรรมและโปรเจกต์">Activities &amp; Projects</span></h2>
+
+      <div class="act-item reveal">
+        <div class="act-dot"></div>
+        <div class="act-body">
+          <div class="act-title" data-en="QCC Leader — Small Group Activity" data-th="หัวหน้า QCC — กลุ่มกิจกรรมย่อย">QCC Leader — Small Group Activity</div>
+          <ul class="act-bullets">
+            <li data-en="Developed a digital NG Pending System to replace manual paper-based recording of production NG events — enabling real-time tracking and faster response." data-th="พัฒนาระบบ NG Pending System แบบดิจิทัลแทนการบันทึก Manual บนกระดาษ — ติดตาม NG แบบ Real-time และตอบสนองได้รวดเร็วขึ้น">Developed a digital NG Pending System replacing manual paper-based NG recording — enabling real-time tracking and faster response.</li>
+            <li data-en="Built an automated inspection data logging system: test results written directly to MySQL in real-time, feeding a live Power BI analysis dashboard." data-th="สร้างระบบบันทึกข้อมูล Inspection อัตโนมัติ: ผลทดสอบถูกเขียนลง MySQL แบบ Real-time เพื่อป้อนข้อมูลให้ Dashboard วิเคราะห์แบบสด">Built automated inspection logging to MySQL in real-time, powering a live Power BI analysis dashboard.</li>
+            <li data-en="Integrated an AI chatbot for auto-search and summarization of defect reports, reducing manual report review time." data-th="ผสาน AI Chatbot สำหรับค้นหาและสรุปรายงานปัญหาอัตโนมัติ ลดเวลาการตรวจสอบรายงานด้วยตนเอง">Integrated an AI chatbot for automated defect report search and summarization.</li>
+            <li data-en="Configured automatic MS Teams alerts for tracked NG issues — notifying responsible engineers immediately when critical problems are detected." data-th="ตั้งค่าการแจ้งเตือนอัตโนมัติไปยัง Microsoft Teams สำหรับปัญหา NG ที่กำลังติดตาม — แจ้งวิศวกรที่รับผิดชอบทันทีเมื่อตรวจพบปัญหาวิกฤต">Configured automatic MS Teams alerts for tracked NG issues, notifying responsible engineers immediately.</li>
+          </ul>
+        </div>
       </div>
-      <div class="exp-company">Asian Stanley International Co., Ltd.</div>
-      <ul class="exp-bullets">
-        <li data-en="Developed automated electrical test machines using Python, integrated with instruments via RS232, RS485, and Ethernet TCP/IP." data-th="พัฒนาเครื่องทดสอบไฟฟ้าอัตโนมัติด้วย Python เชื่อมต่อเครื่องมือผ่าน RS232, RS485 และ Ethernet TCP/IP">Developed automated electrical test machines using Python, integrated with instruments via RS232, RS485, and Ethernet TCP/IP.</li>
-        <li data-en="Designed test sequences and control logic for LED drivers and automotive headlamp / tail-lamp modules." data-th="ออกแบบลำดับการทดสอบและลอจิกควบคุมสำหรับ LED Driver และโมดูลไฟหน้า/ไฟท้ายรถยนต์">Designed test sequences and control logic for LED drivers and automotive headlamp / tail-lamp modules.</li>
-        <li data-en="Implemented traceability and automatic log-data storage (CSV, SQLite) for production and quality analysis." data-th="ติดตั้งระบบ Traceability และจัดเก็บข้อมูล Log อัตโนมัติ (CSV, SQLite)">Implemented traceability and automatic log-data storage (CSV, SQLite) for production and quality analysis.</li>
-        <li data-en="Integrated hardware, sensors, test jigs, and instruments to ensure reliable and repeatable test results." data-th="ผสานฮาร์ดแวร์ เซ็นเซอร์ Test Jig และเครื่องมือวัดเพื่อผลการทดสอบที่ถูกต้องและทำซ้ำได้">Integrated hardware, sensors, test jigs, and instruments to ensure reliable and repeatable test results.</li>
-      </ul>
-    </div>
-
-    <!-- ISON -->
-    <div class="exp">
-      <div class="exp-meta">
-        <span class="exp-role" data-en="Research &amp; Development Engineer" data-th="วิศวกรวิจัยและพัฒนา">Research &amp; Development Engineer</span>
-        <span class="exp-period">Sep 2019 — Dec 2020</span>
-      </div>
-      <div class="exp-company">Ison Import-Export Co., Ltd.</div>
-      <ul class="exp-bullets">
-        <li data-en="Designed electronic circuits and PCB layout for emergency lighting with auto power-on and battery charging management." data-th="ออกแบบวงจรและ PCB สำหรับไฟฉุกเฉิน ระบบเปิดอัตโนมัติและจัดการชาร์จแบตเตอรี่">Designed electronic circuits and PCB layout for emergency lighting with auto power-on and battery charging management.</li>
-        <li data-en="Developed embedded firmware to control product functions, improve reliability, and meet safety standards." data-th="พัฒนา Embedded Firmware ควบคุมการทำงาน เพิ่มความน่าเชื่อถือ และผ่านมาตรฐานความปลอดภัย">Developed embedded firmware to control product functions, improve reliability, and meet safety standards.</li>
-        <li data-en="Created complete schematic, BOM, and PCB routing using Altium Designer." data-th="จัดทำ Schematic, BOM และ PCB Routing ครบชุดด้วย Altium Designer">Created complete schematic, BOM, and PCB routing using Altium Designer.</li>
-        <li data-en="Collaborated with production and QC teams to improve yield rate and reduce component failure." data-th="ประสานงานกับทีมผลิตและ QC เพื่อปรับปรุง Yield Rate และลดความเสียหายของชิ้นส่วน">Collaborated with production and QC teams to improve yield rate and reduce component failure.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ACTIVITIES -->
-<section class="section">
-  <h2 class="sec-head reveal"><span class="n">02</span><span data-en="Activities &amp; Projects" data-th="กิจกรรมและโปรเจกต์">Activities &amp; Projects</span></h2>
-
-  <div class="act-item reveal">
-    <div class="act-dot"></div>
-    <div class="act-body">
-      <div class="act-title" data-en="QCC Leader — Small Group Activity" data-th="หัวหน้า QCC — กลุ่มกิจกรรมย่อย">QCC Leader — Small Group Activity</div>
-      <ul class="act-bullets">
-        <li data-en="Developed a digital NG Pending System to replace manual paper-based recording of production NG events — enabling real-time tracking and faster response." data-th="พัฒนาระบบ NG Pending System แบบดิจิทัลแทนการบันทึก Manual บนกระดาษ — ติดตาม NG แบบ Real-time และตอบสนองได้รวดเร็วขึ้น">Developed a digital NG Pending System replacing manual paper-based NG recording — enabling real-time tracking and faster response.</li>
-        <li data-en="Built an automated inspection data logging system: test results written directly to MySQL in real-time, feeding a live Power BI analysis dashboard." data-th="สร้างระบบบันทึกข้อมูล Inspection อัตโนมัติ: ผลทดสอบถูกเขียนลง MySQL แบบ Real-time เพื่อป้อนข้อมูลให้ Dashboard วิเคราะห์แบบสด">Built automated inspection logging to MySQL in real-time, powering a live Power BI analysis dashboard.</li>
-        <li data-en="Integrated an AI chatbot for auto-search and summarization of defect reports, reducing manual report review time." data-th="ผสาน AI Chatbot สำหรับค้นหาและสรุปรายงานปัญหาอัตโนมัติ ลดเวลาการตรวจสอบรายงานด้วยตนเอง">Integrated an AI chatbot for automated defect report search and summarization.</li>
-        <li data-en="Configured automatic MS Teams alerts for tracked NG issues — notifying responsible engineers immediately when critical problems are detected." data-th="ตั้งค่าการแจ้งเตือนอัตโนมัติไปยัง Microsoft Teams สำหรับปัญหา NG ที่กำลังติดตาม — แจ้งวิศวกรที่รับผิดชอบทันทีเมื่อตรวจพบปัญหาวิกฤต">Configured automatic MS Teams alerts for tracked NG issues, notifying responsible engineers immediately.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-```
-
+    </section>
   </main>
 </div>
 
@@ -532,18 +461,13 @@ function setCustomColor(hex){
   document.querySelectorAll('.swatch').forEach(s=>s.classList.remove('active'));
 }
 
-/* ══ EXPAND ══ */
-function toggleDetail(panelId,btnId){
-  const panel=document.getElementById(panelId), btn=document.getElementById(btnId);
-  const open=panel.classList.toggle('open');
-  btn.classList.toggle('open',open);
-}
+
 
 /* ══ LANGUAGE ══ */
 let isEN=true;
 const txt={
-  en:{sum:"Electronics engineer with 5+ years of experience in test automation, embedded systems, and manufacturing data analytics. Skilled in developing production monitoring systems using Python, SQL Server, Power BI, and Node-RED in automotive electronics environments."},
-  th:{sum:"วิศวกรอิเล็กทรอนิกส์ประสบการณ์กว่า 5 ปี ด้านการทดสอบอัตโนมัติ ระบบฝังตัว และการวิเคราะห์ข้อมูลการผลิต เชี่ยวชาญการพัฒนาระบบติดตามสายการผลิตด้วย Python, SQL Server, Power BI และ Node-RED ในอุตสาหกรรมยานยนต์"}
+  en:{sum:"Electronics engineer with 5+ years of experience in automotive product analysis, test automation, embedded systems, and manufacturing data analytics. Specialized in failure analysis and quality improvement for automotive electronics in high-volume production environments."},
+  th:{sum:"วิศวกรอิเล็กทรอนิกส์ประสบการณ์กว่า 5 ปี ด้านการวิเคราะห์ผลิตภัณฑ์ในยานยนต์ การทดสอบอัตโนมัติ ระบบฝังตัว และการวิเคราะห์ข้อมูลการผลิต เชี่ยวชาญด้านการวิเคราะห์ความเสียหายและการปรับปรุงคุณภาพสำหรับอิเล็กทรอนิกส์ยานยนต์ในสายการผลิตปริมาณสูง"}
 };
 function toggleLang(){
   isEN=!isEN;
@@ -688,7 +612,7 @@ async function exportPDF(){
   styleOverride.id = '__pdf_override';
   styleOverride.textContent = `
     * { transition: none !important; animation: none !important; }
-    .detail-panel { max-height: none !important; opacity: 1 !important; overflow: visible !important; }
+
     .reveal { opacity: 1 !important; transform: none !important; }
     .tag { opacity: 1 !important; transform: none !important; }
     .summary { opacity: 1 !important; }
@@ -698,12 +622,6 @@ async function exportPDF(){
   `;
   document.head.appendChild(styleOverride);
 
-  document.querySelectorAll('.detail-panel').forEach(p => {
-    p.classList.add('open');
-    p.style.maxHeight = 'none';
-    p.style.opacity = '1';
-    p.style.overflow = 'visible';
-  });
 
   await new Promise(r => setTimeout(r, 600));
   void page.offsetHeight;
@@ -729,7 +647,7 @@ async function exportPDF(){
         const s = clonedDoc.createElement('style');
         s.textContent = `
           * { transition: none !important; animation: none !important; }
-          .detail-panel { max-height: none !important; opacity: 1 !important; overflow: visible !important; display: block !important; }
+
           .reveal { opacity: 1 !important; transform: none !important; }
           .tag { opacity: 1 !important; transform: none !important; }
           .summary { opacity: 1 !important; transform: none !important; }
@@ -738,9 +656,6 @@ async function exportPDF(){
           .timeline::before { transform: scaleY(1) !important; }
         `;
         clonedDoc.head.appendChild(s);
-        clonedDoc.querySelectorAll('.detail-panel').forEach(p => {
-          p.style.cssText += 'max-height:none!important;opacity:1!important;overflow:visible!important;';
-        });
         const avBg = clonedDoc.getElementById('av-bg');
         if(avBg){
           avBg.style.width = '100%';
@@ -812,7 +727,7 @@ async function exportPNG(){
   styleOverride.id = '__export_override';
   styleOverride.textContent = `
     * { transition: none !important; animation: none !important; }
-    .detail-panel { max-height: none !important; opacity: 1 !important; overflow: visible !important; }
+
     .reveal { opacity: 1 !important; transform: none !important; }
     .tag { opacity: 1 !important; transform: none !important; }
     .summary { opacity: 1 !important; }
@@ -822,12 +737,6 @@ async function exportPNG(){
   document.head.appendChild(styleOverride);
 
   // 2) Open all panels
-  document.querySelectorAll('.detail-panel').forEach(p => {
-    p.classList.add('open');
-    p.style.maxHeight = 'none';
-    p.style.opacity = '1';
-    p.style.overflow = 'visible';
-  });
 
   // 3) Pre-load avatar image as blob to fix cross-origin
   const imgEl = page.querySelector('.avatar-wrap img');
@@ -863,7 +772,7 @@ async function exportPNG(){
         const s = clonedDoc.createElement('style');
         s.textContent = `
           * { transition: none !important; animation: none !important; }
-          .detail-panel { max-height: none !important; opacity: 1 !important; overflow: visible !important; display: block !important; }
+
           .reveal { opacity: 1 !important; transform: none !important; }
           .tag { opacity: 1 !important; transform: none !important; }
           .summary { opacity: 1 !important; transform: none !important; }
@@ -874,9 +783,6 @@ async function exportPNG(){
         clonedDoc.head.appendChild(s);
 
         // Fix panels in clone
-        clonedDoc.querySelectorAll('.detail-panel').forEach(p => {
-          p.style.cssText += 'max-height:none!important;opacity:1!important;overflow:visible!important;';
-        });
 
         // Fix avatar bg div
         const avBg = clonedDoc.getElementById('av-bg');
@@ -907,7 +813,6 @@ async function exportPNG(){
 </script>
 
 <!-- QR MODAL -->
-
 <div id="qr-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:9999;display:none;align-items:center;justify-content:center;">
   <div style="background:#111;border:1px solid var(--accent);border-radius:4px;padding:32px;width:360px;box-shadow:0 0 30px var(--glow);position:relative;">
     <div style="font-family:'Share Tech Mono',monospace;font-size:.7rem;letter-spacing:.18em;color:var(--accent);text-transform:uppercase;margin-bottom:20px;text-shadow:0 0 8px var(--glow);">⚙ QR Code Settings</div>
@@ -930,7 +835,6 @@ async function exportPNG(){
 </div>
 
 <!-- QR DISPLAY in sidebar (hidden until link set) -->
-
 <style>
 .qr-section{display:none;}
 .qr-section.has-qr{display:block;}
